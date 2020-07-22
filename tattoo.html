@@ -10,6 +10,7 @@
   <meta name="description" content="Art">
   <meta name="author" content="Not Real">
   <link rel='shortcut icon' href='https://raw.githubusercontent.com/Saculs/Ester-Web/master/favicon.png' type='image/png' />
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
 
   <meta property="og:title" content="Ester Paraskova">
 <meta property="og:image" content="https://raw.githubusercontent.com/Saculs/Ester-Web/master/portfolio2020/fotky%20z%20vystav/02-Paraskova-Ex-Post-DSC06685.jpg">
@@ -17,308 +18,44 @@
 
 <meta name="keywords" content="Art Painting Tatto Prague Ester Paraskova UMPRUM">
 
-  <style>
-    body{
-      background-color:white;
-    }
 
-
-    .row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-/* Create four equal columns that sits next to each other */
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
-  }
-}
-
-
-
-    @font-face {
-    font-family: 'favorit_stdregular_extended';
-    src: url('https://notreal.xyz/FavoritStd/favoritstd-regularextended-webfont.woff2') format('woff2'),
-         url('https://notreal.xyz/FavoritStd/favoritstd-regularextended-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    }
-
-    @font-face {
-        font-family: 'favorit_stdbold_extended';
-        src: url('https://notreal.xyz/FavoritStdBold/favorit-std-extended-bold-webfont.woff2') format('woff2'),
-            url('https://notreal.xyz/FavoritStdBold/favorit-std-extended-bold-webfont.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    #catch {
-    color:black;
-    text-transform: uppercase;
-    z-index:100;
-   /* transform: translate(0,-100%); */
-    font-family: 'favorit_stdbold_extended';
-    font-weight: 100;
-    font-size: 290%;
-    padding-bottom: 0%;
-    margin-bottom: 4%;
-    margin-top: 3%;
-    margin-right: 3%;
-    width: 90%;
-    position: absolute;/*
-    padding-left: 3%;
-    left: 0px;
-    top: 0px;
-
-    width: 65%;
-    line-height: 0.8em;
-    margin-top: 0.4em;
-    */
-    line-height: 0.8em;
-  }
-
-  #top {
-    color:black;
-    z-index:100;
-   /* transform: translate(0,-100%); */
-    font-weight: 100;
-    position: relative;
-    padding-left: 3%;
-    padding-top: 3px;
-    padding-right: 3%;
-    left: 0px;
-    top: 0px;
-    margin-top: 0.4em;
-    width:30%;
-  }
-
-  h3 {
-    color:black;
-    text-transform: uppercase;
-    z-index:100;
-   /* transform: translate(0,-100%); */
-    font-family: 'favorit_stdbold_extended';
-    font-weight: 100;
-    /*position: absolute;
-    left: 13px;
-    top: 0px;*/
-    font-size: 300%;
-    width: 65%;
-    line-height: 0.8em;
-    margin-top: 0.1em;
-    padding-bottom: 0%;
-    margin-bottom: 0%;
-  }
-
-  #info {
-    position: absolute;
-    margin-left: 30%;
-    padding-bottom:2%;
-    margin-right: 3%;
-    margin-top: 1%;
-    
-    top:0;
-    /*width:100%;*/
-  }
-
-  #container {
-    position: absolute;
-    top: 0;
-    left:0;
-    width: 100%;
-
-    height: 100%;
-    /*visibility: hidden;*/
-    line-height: 1.8em;
-  }
-
-  #theRest {
-    color:black;
-    font-family: 'favorit_stdregular_extended';
-    font-weight: 600;
-    font-size: 200%;
-    left: 13px;
-    white-space: initial;
-    line-height: 1.15em;
-    display: table-caption;
-  }
-
-  #my_image {
-  /*position: absolute;*/
-  width:100%;
-    height:auto;
-    /*margin-right: -50%;
-    transform: translate(-50%, -50%)*/
-    padding-top: 0%;
-    margin-bottom: 0.0em;
-    margin-top: 0.6em;
-    margin-right: 0.6em;
-}
-
-#yt{
-  width:100%;
-}
-
-
-#gizmo {
-  position: fixed;
-    top: 0;
-    right: 0;
-    width:60px;
-    height:60px;
-    padding-right: 3%;
-    margin-top: 1.7%;
-}
-
-a {
-  text-decoration: none;
-}
-
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: white;
-  color: black;
-  text-align: center;
-  height: 50px;
-  font-family: 'favorit_stdbold_extended';
-  padding: 10px;
-}
-
-@media screen and (min-width: 0px) {
-  h3 {
-    font-size: 200%;
-  }
-  #catch {
-    font-size: 200%;
-  }
-  #gizmo {
-    width:50px;
-    height:50px;
-  }
-}
-
-@media screen and (min-width: 360px) {
-  h3 {
-    font-size: 290%;
-  }
-  #catch {
-    font-size: 290%;
-  }
-  #gizmo {
-    width:70px;
-    height:70px;
-  }
-}
-
-@media screen and (min-width: 460px) {
-  h3 {
-    font-size: 310%;
-  }
-  #catch {
-    font-size: 310%;
-  }
-  #gizmo {
-    width:90px;
-    height:90px;
-  }
-}
-
-@media screen and (min-width: 560px) {
-  h3 {
-    font-size: 410%;
-  }
-  #catch {
-    font-size: 410%;
-  }
-  #gizmo {
-    width:100px;
-    height:100px;
-  }
-}
-
-
-
-
-@media screen and (min-width: 700px) {
-  h3 {
-    font-size: 500%;
-  }
-  #catch{
-    font-size: 500%;
-  }
-  #gizmo {
-    width:110px;
-    height:110px;
-  }
-}
-@media screen and (max-height: 460px) {
-  h3 {
-    font-size: 260%;
-  }
-  #catch {
-    font-size: 260%;
-  }
-  #gizmo {
-    width:60px;
-    height:60px;
-  }
-}
-
-#top img{
-    display: block;
-    padding-bottom:60px;
-}
-
-img:hover{
-  opacity: 0.5;
-}
-
-#esterTop{
-    margin-top:2%;
-}
-
-.link{
-      -webkit-transform: scale(0.7); /* Saf3.1+, Chrome */
-     -moz-transform: scale(0.7); /* FF3.5+ */
-      -ms-transform: scale(0.7); /* IE9 */
-       -o-transform: scale(0.7); /* Opera 10.5+ */
-          transform: scale(0.7);
-}
-
-  </style>
 
 </head>
 
 <body>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <a href="index.html"><img class="logoMob" src="https://raw.githubusercontent.com/Saculs/Ester-Web/master/ester/esterparaskova.png"/></a>
 
+    <nav role="navigation" class="mobileNav">
+      <div id="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" />
+    
+        <!--
+        Some spans to act as a hamburger.
+        
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+    
+        <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+        <ul id="menu">
+          <a href="work.html"><img  class="linkMob" src="https://raw.githubusercontent.com/Saculs/Ester-Web/master/ester/work.png"/></a>
+          <a href="exhibitions.html"><img  class="linkMob" src="https://raw.githubusercontent.com/Saculs/Ester-Web/master/ester/exhibitions.png"/></a>
+         <a href="tattoo.html"> <img  class="linkMob" src="https://raw.githubusercontent.com/Saculs/Ester-Web/master/ester/tattoo.png"/></a></br>
+          <a href="bio.html"><img  class="linkMob" src="https://raw.githubusercontent.com/Saculs/Ester-Web/master/ester/bio.png"/></a>
+        </ul>
+      </div>
+    </nav>
     <div id="container">
         <div id="cont">
 
@@ -333,6 +70,9 @@ img:hover{
 
           
           <div id="info">
+
+            <div class="mobileNav" style="height:25px;"></div>
+
           <div class="row">
             <div class="column">
               <img src="https://raw.githubusercontent.com/Saculs/Ester-Web/master/tattoos/a.jpg"/>
