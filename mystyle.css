@@ -120,13 +120,14 @@
   flex-wrap: wrap;
   padding: 0 0px;
   vertical-align: right;
+  height:100%;
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
   flex: 25%;
   max-width: 25%;
-  padding: 0 4px;
+  padding: 0 2px;
   float:right;
 }
 
@@ -244,10 +245,10 @@
     margin-left: 30%;
     padding-bottom:2%;
     margin-right: 3%;
-    margin-top: 1%;
+    margin-top: 0%;
     top: 25px;
     
-    /*width:100%;*/
+    width:90%;
   }
 
   #container {
@@ -272,7 +273,7 @@
     display: table-caption;
   }
 
-  #my_image {
+ .column img {
   /*position: absolute;*/
   width:100%;
     height:auto;
@@ -514,7 +515,7 @@ p {
 
 #top img{
     display: block;
-    padding-bottom:60px;
+    padding-bottom:10px;
 }
 
 img:hover{
