@@ -1,6 +1,7 @@
 ﻿<!doctype html>
 
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
 
@@ -13,82 +14,92 @@
   <link rel="stylesheet" type="text/css" href="mystyle.css">
 
   <meta property="og:title" content="Ester Paraskova">
-<meta property="og:image" content="https://raw.githubusercontent.com/Saculs/Ester-Web/master/portfolio2020/fotky%20z%20vystav/02-Paraskova-Ex-Post-DSC06685.jpg">
-<meta property="og:description" content="Art">
+  <meta property="og:image" content="https://raw.githubusercontent.com/Saculs/Ester-Web/master/Paintings/Uvo.jpeg">
+  <meta property="og:description" content="Art">
+  <meta property="og:type" content="portfolio" />
 
-<meta name="keywords" content="Art Painting Tatto Prague Ester Paraskova UMPRUM">
+  <meta name="keywords" content="Art Painting Tatto Prague Brno Ester Paraskova UMPRUM ester com esterparaskova.cz">
 
 </head>
 
 <body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="dist/simpleLightbox.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="dist/simpleLightbox.min.js"></script>
 
 
-      <a href="index.html"><img class="logoMob" src="https://raw.githubusercontent.com/Saculs/Ester-Web/master/ester/esterparaskova.png"/></a>
+  <a href="index.html"><img class="logoMob"
+      src="https://raw.githubusercontent.com/Saculs/Ester-Web/master/ester/esterparaskova.png" /></a>
 
-    <nav role="navigation" class="mobileNav">
-      <div id="menuToggle">
-        <!--
+  <nav role="navigation" class="mobileNav">
+    <div id="menuToggle">
+      <!--
         A fake / hidden checkbox is used as click reciever,
         so you can use the :checked selector on it.
         -->
-        <input type="checkbox" />
-    
-        <!--
+      <input type="checkbox" />
+
+      <!--
         Some spans to act as a hamburger.
         
         They are acting like a real hamburger,
         not that McDonalds stuff.
         -->
-        <span></span>
-        <span></span>
-        <span></span>
-    
-        <!--
+      <span></span>
+      <span></span>
+      <span></span>
+
+      <!--
         Too bad the menu has to be inside of the button
         but hey, it's pure CSS magic.
         -->
-        <ul id="menu">
-          <a href="work.html"><img  class="linkMob" src="https://raw.githubusercontent.com/Saculs/Ester-Web/master/ester/work.png"/></a>
+      <ul id="menu">
+        <a href="work.html"><img class="linkMob"
+            src="https://raw.githubusercontent.com/Saculs/Ester-Web/master/ester/work.png" /></a>
         </br>
-         <a href="tattoo.html"> <img  class="linkMob" src="https://raw.githubusercontent.com/Saculs/Ester-Web/master/ester/tattoo.png"/></a></br>
-          <a href="bio.html"><img  class="linkMob" src="https://raw.githubusercontent.com/Saculs/Ester-Web/master/ester/bio.png"/></a>
-        </ul>
+        <a href="tattoo.html"> <img class="linkMob"
+            src="https://raw.githubusercontent.com/Saculs/Ester-Web/master/ester/tattoo.png" /></a></br>
+        <a href="bio.html"><img class="linkMob"
+            src="https://raw.githubusercontent.com/Saculs/Ester-Web/master/ester/bio.png" /></a>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <div id="container">
+    <div id="cont">
+
+      <div id="top">
+        <a href="index.html"><img id="esterTop"
+            src="https://raw.githubusercontent.com/Saculs/Ester-Web/master/ester/esterparaskova.png" /></a>
+        <a href="work.html"><img class="link"
+            src="https://raw.githubusercontent.com/Saculs/Ester-Web/master/ester/work.png" /></a>
+        <a href="tattoo.html"> <img class="link"
+            src="https://raw.githubusercontent.com/Saculs/Ester-Web/master/ester/tattoo.png" /></a>
+        <a href="bio.html"><img class="link"
+            src="https://raw.githubusercontent.com/Saculs/Ester-Web/master/ester/bio.png" /></a>
       </div>
-    </nav>
+      <div id="info">
+        <div class="mobileNav" style="height:25px;"></div>
+        <a href="bio.html"><img id="esterFoto" src="Paintings/Uvo.jpeg" /></a>
 
-   
+      </div>
 
-    <div id="container">
-        <div id="cont">
-
-          <div id="top">
-            <a href="index.html"><img id="esterTop" src="https://raw.githubusercontent.com/Saculs/Ester-Web/master/ester/esterparaskova.png"/></a>
-            <a href="work.html" ><img  class="link" src="https://raw.githubusercontent.com/Saculs/Ester-Web/master/ester/work.png"/></a>
-           <a href="tattoo.html" > <img  class="link" src="https://raw.githubusercontent.com/Saculs/Ester-Web/master/ester/tattoo.png"/></a>
-            <a href="bio.html" ><img  class="link"src="https://raw.githubusercontent.com/Saculs/Ester-Web/master/ester/bio.png"/></a>
-          </div>
-          <div id="info">
-            <div class="mobileNav" style="height:25px;"></div>
-          <a href="bio.html"><img id="esterFoto" src="Paintings/Uvo.jpeg"/></a>
-
-          </div>
-
-        </div>
-      </div><!--
+    </div>
+  </div>
+  <!--
       <div class='footer'>
         </br>kontakt@esterparaskova.com
         </div>
         -->
-<!--
+  <!--
       <a href="https://notreal.xyz">
       <img id="gizmo" src="https://raw.githubusercontent.com/Saculs/NotReal-WebGL/master/models/gizmo1.png"/>
     </a>
     -->
 
 
-    <script>
+  <script>
 
     /**
 
@@ -116,6 +127,7 @@
           moveCatch("#info", 0);
         }, 2800);
         **/
-    </script>
+  </script>
 </body>
+
 </html>
